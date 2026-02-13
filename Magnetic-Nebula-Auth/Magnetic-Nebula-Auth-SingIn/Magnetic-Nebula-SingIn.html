@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetic Nebula SingIn</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/Magnetic-Nebula-SingIn.css">
+
+</head>
+<body>
+    <canvas id="c"></canvas>
+
+<div class="wrapper">
+    <div class="sign-box">
+        
+        <!-- Cosmic Badge -->
+        <div class="cosmic-badge">
+            <i class="fas fa-rocket"></i>
+        </div>
+        
+        <h1>Welcome Back</h1>
+        <div class="subtitle">Hello again, we've missed you 👋</div>
+
+        <!-- Email Field -->
+        <div class="input-group" id="email-group">
+            <label>Email Address</label>
+            <div class="input-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" placeholder="cosmic@explorer.space">
+            </div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="input-group" id="password-group">
+            <label>Password</label>
+            <div class="input-wrapper">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="••••••••">
+                <span class="show-pass" onclick="togglePass()">
+                    <i class="far fa-eye"></i> Show
+                </span>
+            </div>
+        </div>
+
+        <!-- Options Row -->
+        <div class="options-row">
+            <label class="remember-me">
+                <input type="checkbox" checked> Remember
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <!-- Sign In Button -->
+        <button class="cosmic-btn" id="signin-btn" onclick="handleSignIn()">
+            Sign In
+        </button>
+
+        <!-- Separator -->
+        <div class="separator">
+            <span>or</span>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <div class="social-icon"><i class="fab fa-google"></i></div>
+            <div class="social-icon"><i class="fab fa-github"></i></div>
+            <div class="social-icon"><i class="fab fa-microsoft"></i></div>
+            <div class="social-icon"><i class="fab fa-apple"></i></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            No account? <a href="../SingUp/Magnetic-Nebula-SingUp.html">Create one</a>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/Magnetic-Nebula-SingIn.js"></script>
+
+</body>
+</html>
