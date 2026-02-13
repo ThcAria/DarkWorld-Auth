@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DarkWorld Login/Register</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="./assets/css/SingUp.SingIn.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="left">
+        <div class="neon-cursor" id="cursorGlow"></div>
+        <div class="typing-wrapper">
+            <h1 id="typingTitle" class="typing-title"></h1>
+            <div class="subtitle" id="subtitleText"></div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="login-box" id="formContainer">
+            <div class="form-toggle">
+                <!-- Sliding indicator -->
+                <div class="toggle-slider" id="toggleSlider"></div>
+                <button class="toggle-btn active" id="loginToggle">Sign In</button>
+                <button class="toggle-btn" id="registerToggle">Sign Up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="loginForm">
+                <h2>Welcome back</h2>
+                <span>Please sign in to continue</span>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" id="loginEmail">
+                    <input type="password" placeholder="Password" id="loginPassword">
+                </div>
+                <button onclick="handleLogin()">Sign In</button>
+            </div>
+
+            <!-- Register Form -->
+            <div id="registerForm" style="display:none;">
+                <h2>Create account</h2>
+                <span>Please fill in your details</span>
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" id="firstName">
+                    <input type="text" placeholder="Last Name" id="lastName">
+                    <input type="email" placeholder="Email" id="registerEmail">
+                    <input type="password" placeholder="Password" id="registerPassword">
+                    <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                </div>
+                <div id="registerError" class="error-message"></div>
+                <button onclick="handleRegister()">Sign Up</button>
+            </div>
+
+            <div class="divider">OR CONTINUE WITH</div>
+            <div class="social">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-apple"></i>
+            </div>
+            <div class="footer" id="footerText">
+                Don't have an account? <a href="#" id="switchToRegister">Sign up</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/SingUp.SingIn.js"></script>
+
+</body>
+</html>
