@@ -151,7 +151,7 @@ button:hover{
     content:"";
     position:absolute;
     top:50%;
-    width:40%;
+    width:50px;
     height:1px;
     background:#eee;
 }
