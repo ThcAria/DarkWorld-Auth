@@ -1,4 +1,4 @@
-# 🌑 DarkWorld Auth
+# 🌑 Enterprise-Auth
 
 <div>
   <img src="https://img.shields.io/badge/version-1.0.0-4f7cff.svg" alt="Version 1.0.0"/>
