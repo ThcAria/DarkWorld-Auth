@@ -56,20 +56,19 @@ All files are organized in separate folders with a clean structure, ready to be 
 ## 📁 Project Structure
 
 ```
-DarkWorld-Auth/
+Enterprise-Auth/
 │
 ├── 📄 index.html
 ├── 📄 README.md
+├── 📄 Enterprise-Auth.rar (for Download Templets)
 │
 └── 📁 assets/
     ├── 📁 css/
     │   └── 📄 style.css          # Main styles
     │
-    ├── 📁 js/
-    │   └── 📄 script.js          # All logic & interactions
-    │
-    └── 📁 images/
-        └── 📄 preview.png        # Preview image for GitHub
+    └── 📁 js/
+        └── 📄 script.js          # All logic & interactions
+
 ```
 
 | File | Path | Role |
