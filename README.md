@@ -1,48 +1,54 @@
 # 🚀 Free OAuth Templates Repository
 
-Welcome to the Free OAuth Templates Repository! This collection provides 10 ready-to-use OAuth login templates designed to be easily integrated into your projects. Save time, stay secure, and customize them to fit your needs.
+Welcome! This repository offers **10 ready-to-use OAuth login templates** designed for easy integration into your projects. Save time, stay secure, and customize them effortlessly.  
 
 ---
 
-✨ Key Features
+## ✨ Key Features
 
-- Completely Free: All templates are free for personal and commercial use.
-- Highly Customizable: Easily adapt each template to your project.
-- MIT Licensed: Use, modify, and distribute freely under the MIT License.
-- Future Expansion: This repository will eventually include 10 OAuth templates.
-
----
-
-🔹 Available Templates
-
-Currently, two templates are partially ready. You can fill in the details as needed:
-
-1. OAuth Template 1 – [Insert description here]
-2. OAuth Template 2 – [Insert description here]
-
-(More templates will be added over time to complete the collection of 10.)
+- **Completely Free** – All templates are free for personal and commercial use.  
+- **Highly Customizable** – Easily adapt each template to fit your project.  
+- **MIT Licensed** – Use, modify, and distribute freely.  
+- **Future Expansion** – We plan to include **10 complete OAuth templates** in the collection.  
 
 ---
 
-💡 How to Use
+## 🔹 Available Templates
 
-# 1. Clone the repository
-git clone https://github.com/your-username/your-repo.git
+Currently, **two templates are partially ready**. You can fill in the details as needed:  
 
-# 2. Follow the instructions inside each template folder.
-# 3. Integrate the templates directly into your projects with minimal setup.
+1. **OAuth Template 1** – [Click to email](mailto:your-email@example.com)  
+2. **OAuth Template 2** – [Click to email](mailto:your-email@example.com)  
+
+(More templates will be added over time to complete the collection of 10)  
 
 ---
 
-🤝 Contributing & Feedback
-Want to upgrade, improve, or suggest new OAuth templates? Reach out via:
+## 🛠️ Built With
 
-GitHub Messages: [Your GitHub profile link]
+These templates are built using:  
 
-Email: [Your GitHub-associated email]
+- **HTML** – Structure of the templates  
+- **CSS** – Styling and layout  
+- **JavaScript** – Functionality and OAuth integration  
 
-We appreciate your contributions and feedback!
+You can easily customize and extend them to match your project’s needs.  
 
-Keywords / Tags: free OAuth templates, OAuth login, MIT License OAuth, ready-to-use OAuth, OAuth integration, OAuth 2.0, OAuth authentication
 
-Thank you for visiting! Happy coding! 🚀
+---
+
+## 🤝 Contributing & Feedback
+
+Want to improve or suggest new OAuth templates? Reach out via:  
+
+- **GitHub Messages** – [Click to open your GitHub profile](#)  
+- **Email** – [Click to email](mailto:your-email@example.com)  
+
+We appreciate your contributions and feedback!  
+
+---
+
+**Keywords / Tags:** `free OAuth templates`, `OAuth login`, `MIT License OAuth`, `ready-to-use OAuth`, `OAuth integration`, `OAuth 2.0`, `OAuth authentication`  
+
+Thank you for visiting! **Happy coding! 🚀**
+
