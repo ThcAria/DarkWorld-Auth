@@ -18,7 +18,7 @@ Welcome! This repository offers **10 ready-to-use OAuth login templates** design
 Currently, **two templates are partially ready**. You can fill in the details as needed:  
 
 1. **Enterprise Auth** – [Download Templetes](https://github.com/ThcAria/SignatureHub-FreeTemplates/tree/master/Enterprise-Auth)  
-2. **Magnetic Nebula** – [Download Templetes]([mailto:your-email@example.com](https://github.com/ThcAria/SignatureHub-FreeTemplates/blob/master/Magnetic-Nebula-Auth/README.md))  
+2. **Magnetic Nebula** – [Download Templetes](https://github.com/ThcAria/SignatureHub-FreeTemplates/tree/master/Magnetic-Nebula-Auth)  
 
 (More templates will be added over time to complete the collection of 10)  
 
