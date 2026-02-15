@@ -53,6 +53,28 @@ All files are organized with a clean structure, ready to be used in any project.
 
 ---
 
+## 📁 Project Structure
+
+```
+Magnetic-Neubla-Auth-SingIn/
+OR
+Magnetic-Neubla-Auth-SingUp/
+│
+├── 📄 index.html
+├── 📄 README.md
+├── 📄 Magnetic-Neubla-Auth.rar (for Download Templets)
+│
+└── 📁 assets/
+    ├── 📁 css/
+    │   └── 📄 style.css          # Main styles
+    │
+    └── 📁 js/
+        └── 📄 script.js          # All logic & interactions
+
+```
+
+---
+
 ## 🌐 Browser Support
 
 | Browser | Status |
