@@ -1,0 +1,486 @@
+
+html,body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background:radial-gradient(circle at center,#0c1022 0%,#020409 70%,#000 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Canvas */
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+/* Center Wrapper */
+.wrapper{
+    position:relative;
+    z-index:2;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===== GLASS BOX ULTRA MODERN ===== */
+.sign-box{
+    width:420px;
+    padding:25px 35px 30px;
+    border-radius:28px;
+    backdrop-filter:blur(15px) saturate(180%);
+    -webkit-backdrop-filter:blur(15px) saturate(180%);
+    background:rgba(10, 10, 15, 0.75);
+    border:1px solid rgba(255, 255, 255, 0.07);
+    border-right:1px solid rgba(255, 255, 255, 0.03);
+    border-bottom:1px solid rgba(255, 255, 255, 0.03);
+    box-shadow:0 20px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(100, 100, 150, 0.1) inset;
+    color:white;
+    text-align:center;
+    transition:all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
+    animation: floatIn 0.8s ease-out;
+    will-change: transform, box-shadow;
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.sign-box:hover{
+    transform: translateY(-2px);
+    box-shadow:0 25px 45px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(150, 150, 200, 0.15) inset;
+    border-color: rgba(150, 150, 200, 0.1);
+}
+
+/* Logo/Badge */
+.cosmic-badge {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2a2a3a, #1a1a2a);
+    border-radius: 50%;
+    margin: -45px auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    will-change: transform, border-color;
+}
+
+.cosmic-badge i {
+    font-size: 28px;
+    color: #c0c0ff;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+    transition: color 0.3s ease;
+}
+
+.sign-box:hover .cosmic-badge {
+    transform: rotate(3deg);
+    border-color: rgba(200, 200, 255, 0.2);
+}
+
+.sign-box:hover .cosmic-badge i {
+    color: #e0e0ff;
+}
+
+/* Title */
+.sign-box h1{
+    margin:3px 0 2px;
+    font-weight:600;
+    font-size:26px;
+    letter-spacing:0.5px;
+    color: #f0f0ff;
+}
+
+.subtitle{
+    margin-top:2px;
+    margin-bottom:15px;
+    font-size:13px;
+    color:rgba(200,200,220,0.7);
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+/* Input Group Modern */
+.input-group{
+    position:relative;
+    margin-bottom:14px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    font-size: 12px;
+    color: rgba(200,200,220,0.8);
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group input{
+    width:100%;
+    padding:10px 40px 10px 45px;
+    background:rgba(5, 5, 8, 0.7);
+    border:none;
+    border-radius:14px;
+    color:#e0e0ff;
+    font-size:14px;
+    outline:none;
+    border:1px solid rgba(255,255,255,0.05);
+    transition: all 0.25s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* استایل برای حالت خطا */
+.input-group.error input {
+    border: 2px solid #ff4d4d !important;
+    background: rgba(255, 70, 70, 0.1);
+    box-shadow: 0 0 15px rgba(255, 70, 70, 0.3);
+    color: #ffb3b3;
+}
+
+.input-group.error i {
+    color: #ff8080 !important;
+}
+
+.input-group.error label {
+    color: #ff9999;
+}
+
+.input-group input:focus{
+    border-color:#9090c0;
+    box-shadow:0 0 0 2px rgba(120, 120, 180, 0.2), 0 4px 12px rgba(0, 0, 0, 0.4);
+    background:rgba(10, 10, 15, 0.8);
+}
+
+.input-group input::placeholder {
+    color: rgba(150, 150, 170, 0.4);
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* Icons - Font Awesome */
+.input-group i{
+    position:absolute;
+    left:16px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:16px;
+    color: #a0a0d0;
+    opacity:0.7;
+    z-index: 1;
+    text-shadow: 0 0 8px rgba(160, 160, 200, 0.3);
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.input-group input:focus + i {
+    color: #c0c0ff;
+    opacity: 1;
+}
+
+/* Show Password Toggle */
+.show-pass{
+    position:absolute;
+    right:14px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:12px;
+    font-weight: 500;
+    color: #b0b0e0;
+    opacity:0.7;
+    transition: all 0.2s ease;
+    background: rgba(30,30,40,0.5);
+    padding: 4px 8px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    letter-spacing: 0.3px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid transparent;
+}
+
+.show-pass i {
+    position: static;
+    font-size: 12px;
+    margin-right: 2px;
+    transform: none;
+    transition: none;
+}
+
+.show-pass:hover {
+    opacity: 1;
+    background: rgba(60,60,80,0.7);
+    color: white;
+    border-color: rgba(180,180,220,0.2);
+}
+
+/* Password Strength Indicator */
+.password-strength-container {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding: 0 5px;
+}
+
+.password-strength {
+    height: 4px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.strength-text {
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: left;
+    color: rgba(200,200,220,0.5);
+    padding-left: 5px;
+}
+
+/* Terms and Conditions */
+.terms-row {
+    margin: 10px 0 14px;
+    font-size: 12px;
+    color: rgba(200,200,220,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.terms-row input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: #6b6b9c;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #1a1a2a;
+}
+
+.terms-row a {
+    color: #b0b0e0;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(176, 176, 224, 0.3);
+    transition: all 0.2s ease;
+}
+
+.terms-row a:hover {
+    color: white;
+    border-bottom-color: white;
+}
+
+/* Button Cosmic */
+.cosmic-btn {
+    position: relative;
+    width:100%;
+    padding:11px;
+    border:none;
+    border-radius:40px;
+    background: linear-gradient(135deg, #2a2a3a, #1a1a2a);
+    color: #e0e0ff;
+    font-weight:500;
+    font-size:15px;
+    cursor:pointer;
+    transition: all 0.25s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(180, 180, 220, 0.1);
+    overflow: hidden;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin-top: 5px;
+}
+
+.cosmic-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(150,150,200,0.15), transparent);
+    transition: left 0.5s ease;
+}
+
+.cosmic-btn:hover {
+    background: linear-gradient(135deg, #323246, #222236);
+    color: white;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6), 0 0 12px rgba(120,120,180,0.3);
+    border-color: rgba(200,200,240,0.15);
+    transform: translateY(-1px);
+}
+
+.cosmic-btn:hover:before {
+    left: 100%;
+}
+
+.cosmic-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease;
+}
+
+/* Footer */
+.footer{
+    margin-top:16px;
+    font-size:13px;
+    color:rgba(200,200,220,0.6);
+}
+
+.footer a{
+    color:#b0b0e0;
+    text-decoration:none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 1px dotted rgba(176, 176, 224, 0.3);
+    padding-bottom: 1px;
+}
+
+.footer a:hover{
+    color:white;
+    border-bottom-color: white;
+}
+
+/* Separator */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 12px 0 10px;
+    color: rgba(200,200,220,0.3);
+    font-size: 12px;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.separator span {
+    padding: 0 8px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 3px;
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(20,20,30,0.6);
+    border: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c0c0e0;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.social-icon:hover {
+    background: linear-gradient(135deg, #323246, #222236);
+    border-color: rgba(200,200,240,0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    color: white;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.social-icon:active {
+    transform: translateY(0) scale(1);
+}
+
+/* Loading State */
+.cosmic-btn.loading {
+    opacity: 0.8;
+    cursor: wait;
+    color: transparent;
+    pointer-events: none;
+}
+
+.cosmic-btn.loading:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #a0a0d0;
+    border-top-color: transparent;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s infinite linear;
+}
+
+/* خطای checkbox */
+.terms-row.error {
+    color: #ff9999;
+}
+
+.terms-row.error a {
+    color: #ffb3b3;
+}
+
+.terms-row.error input[type="checkbox"] {
+    box-shadow: 0 0 10px #ff4d4d;
+    border: 1px solid #ff4d4d;
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .sign-box {
+        width: 85%;
+        padding: 20px 20px 25px;
+    }
+    
+    .cosmic-badge {
+        width: 50px;
+        height: 50px;
+        margin-top: -35px;
+    }
+}
