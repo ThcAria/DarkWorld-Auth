@@ -17,8 +17,8 @@ Welcome! This repository offers **10 ready-to-use OAuth login templates** design
 
 Currently, **two templates are partially ready**. You can fill in the details as needed:  
 
-1. **OAuth Template 1** – [Click to email](mailto:your-email@example.com)  
-2. **OAuth Template 2** – [Click to email](mailto:your-email@example.com)  
+1. **Enterprise Auth** – [Download Templetes]([mailto:your-email@example.com](https://github.com/ThcAria/SignatureHub-FreeTemplates/blob/master/Magnetic-Nebula-Auth/README.md))  
+2. **Magnetic Nebula** – [Download Templetes](mailto:your-email@example.com)  
 
 (More templates will be added over time to complete the collection of 10)  
 
@@ -40,15 +40,16 @@ You can easily customize and extend them to match your project’s needs.
 ## 🤝 Contributing & Feedback
 
 Want to improve or suggest new OAuth templates? Reach out via:  
-
-- **GitHub Messages** – [Click to open your GitHub profile](#)  
+ 
 - **Email** – [Click to email](mailto:your-email@example.com)  
 
 We appreciate your contributions and feedback!  
 
 ---
 
+Thank you for visiting! **Happy coding! 🚀**
+
 **Keywords / Tags:** `free OAuth templates`, `OAuth login`, `MIT License OAuth`, `ready-to-use OAuth`, `OAuth integration`, `OAuth 2.0`, `OAuth authentication`  
 
-Thank you for visiting! **Happy coding! 🚀**
+
 
